@@ -319,7 +319,7 @@ The selected capacitor provides additional ripple reduction while maintaining st
 The effectiveness of the capacitor filter can be observed from the filtered output waveform.
 
 <p align="center">
-<img src="ripple-analysis.png" width="85%">
+<img src="regulated-output-5.9v.jpeg" width="85%">
 </p>
 
 ### Comparison
@@ -508,7 +508,7 @@ Ripple = (0.240 / 5.9) × 100
 The small difference between theoretical and practical values is mainly due to the non-ideal behavior of electronic components and simulation conditions.
 
 <p align="center">
-<img src="ripple-analysis.png" width="85%">
+<img src="ripple-analysis.jpeg" width="85%">
 </p>
 
 ---
