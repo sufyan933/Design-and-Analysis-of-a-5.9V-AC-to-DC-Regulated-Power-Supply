@@ -4,17 +4,15 @@
 
 ### Full-Wave Bridge Rectifier • Capacitor Filter • Zener Voltage Regulator • LTspice Simulation
 
-<img src="https://img.shields.io/badge/Course-Electronic%20Devices%20%26%20Circuits-I-blue?style=for-the-badge">
-<img src="https://img.shields.io/badge/Software-LTspice-red?style=for-the-badge">
+<img src="https://img.shields.io/badge/Language-Analog%20Electronics-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/Simulation-LTspice-red?style=for-the-badge">
 <img src="https://img.shields.io/badge/Output-5.9V%20DC-success?style=for-the-badge">
+<img src="https://img.shields.io/badge/Type-Academic%20Project-orange?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge">
-<img src="https://img.shields.io/badge/License-Academic-orange?style=for-the-badge">
 
 <br>
 
-<p align="center">
-<img src="banner.png" width="100%">
-</p>
+
 
 *A complete AC-to-DC regulated power supply designed using a bridge rectifier, capacitor filter, and Zener diode voltage regulator. The project demonstrates the conversion of a 12V AC source into a stable 5.9V DC output through theoretical analysis and LTspice simulation.*
 
@@ -101,7 +99,7 @@ The objectives of this project are to:
 The complete operation of the regulated power supply is illustrated below.
 
 <p align="center">
-<img src="system-flowchart.png" width="85%">
+<img src="system-flowchart.jpeg" width="85%">
 </p>
 
 ### Process Flow
@@ -138,6 +136,26 @@ The complete circuit was designed and simulated in **LTspice**. It consists of a
 The bridge rectifier converts alternating current into pulsating direct current, while the capacitor and Zener regulator work together to produce a stable, low-ripple DC output suitable for powering electronic circuits.
 
 ---
+# 🔧 Hardware Implementation
+
+The designed power supply was successfully implemented using discrete electronic components. The hardware prototype follows the same design as the LTspice simulation and demonstrates the practical realization of the regulated power supply.
+
+The circuit consists of a bridge rectifier, smoothing capacitor, series resistor, Zener diode voltage regulator, and load resistor. The hardware implementation validates the theoretical calculations and simulation results by producing a stable regulated DC output.
+
+<p align="center">
+<img src="hardware-circuit.png" width="80%">
+</p>
+
+### Hardware Components
+
+| Component | Specification |
+|-----------|---------------|
+| Transformer | 12V AC |
+| Bridge Rectifier | 4 × Silicon Diodes |
+| Filter Capacitor | 220 µF |
+| Series Resistor | 820 Ω |
+| Zener Diode | 5.2 V |
+| Load Resistor | 1 kΩ |
 
 # 🌊 Input AC Waveform
 
@@ -234,9 +252,9 @@ Ripple voltage is one of the most important performance parameters of a DC power
 
 For a full-wave rectifier,
 
-\[
-V_r=\frac{I_L}{fC}
-\]
+```text
+Vr = IL / (f × C)
+```
 
 Using the design values:
 
@@ -392,9 +410,6 @@ while the calculated Zener current is approximately
 
 These values ensure reliable voltage regulation while protecting the Zener diode from excessive current.
 
-<p align="center">
-<img src="series-resistor-calculation.png" width="80%">
-</p>
 
 ---
 
@@ -402,9 +417,6 @@ These values ensure reliable voltage regulation while protecting the Zener diode
 
 The final stage of the power supply uses a Zener diode operating in reverse breakdown to maintain a constant output voltage despite input or load variations.
 
-<p align="center">
-<img src="zener-regulation.png" width="85%">
-</p>
 
 Using
 
@@ -436,7 +448,7 @@ The regulator effectively maintains a constant DC voltage while minimizing the e
 The final output waveform demonstrates successful rectification, filtering, and regulation.
 
 <p align="center">
-<img src="regulated-output-5.9v.png" width="85%">
+<img src="regulated-output-5.9v.jpeg" width="85%">
 </p>
 
 ### Final Performance
@@ -529,9 +541,7 @@ Line Regulation
 
 This indicates that even with variations in input voltage, the regulated output remains highly stable.
 
-<p align="center">
-<img src="line-load-regulation.png" width="80%">
-</p>
+
 
 ---
 
